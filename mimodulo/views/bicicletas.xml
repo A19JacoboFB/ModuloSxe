@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.actions.act_window" id="action_bicicletas">
+      <field name="name">Bicicletas</field>
+      <field name="res_model">bicicletas</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Bicicletas" id ="menu_bicicletas" parent ="" action="action_bicicletas"/>
+</odoo>

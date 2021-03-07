@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_bicicletas,bicicletas_default,model_bicicletas,,1,0,0,0
+acl_bicicletas_personal,bicicletas_personal,model_bicicletas,group_personal,1,1,1,1
+acl_modelo,modelo_default,model_modelo,,1,0,0,0
+acl_modelo_personal,modelo_personal,model_modelo,group_personal,1,1,1,1

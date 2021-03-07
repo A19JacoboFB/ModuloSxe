@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   
+    
+    <record model='ir.actions.act_window' id='action_modelo'>
+      <field name="name">Modelo</field>
+      <field name="res_model">modelo</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Modelo" id ="menu_modelo" parent ="menu_bicicletas" action="action_modelo"/>
+   
+</odoo>
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="mimodulo.action_window">
+      <field name="name">mimodulo window</field>
+      <field name="res_model">mimodulo.mimodulo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="mimodulo.action_server">
+      <field name="name">mimodulo server</field>
+      <field name="model_id" ref="model_mimodulo_mimodulo"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="mimodulo" id="mimodulo.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="mimodulo.menu_1" parent="mimodulo.menu_root"/>
+    <menuitem name="Menu 2" id="mimodulo.menu_2" parent="mimodulo.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="mimodulo.menu_1_list" parent="mimodulo.menu_1"
+              action="mimodulo.action_window"/>
+    <menuitem name="Server to list" id="mimodulo" parent="mimodulo.menu_2"
+              action="mimodulo.action_server"/>
+    -->
